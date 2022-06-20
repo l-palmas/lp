@@ -218,6 +218,7 @@ article div div div p{
 }
 
 .imgp{
+    padding: 0.2rem;
     width:60%;
 }
 
@@ -225,6 +226,7 @@ article div div div p{
     
 
 .imgp{
+    
     width:65%;
 }
 }
