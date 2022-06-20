@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     border: 0cm;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*fin configuración general*/
@@ -85,7 +86,7 @@ nav ul li a:hover{
 
 article{
     height: 270px;
-    background-image: url('images/bc madera.jpg');
+    background-image:url('images/bc\ madera\ \(1\).png');
     background-attachment: fixed;
     
 }
@@ -96,7 +97,7 @@ article{
 
 article{
     height: 674px;
-    background-image: url('images/bc madera.jpg');
+    background-image: url('images/bc\ madera\ \(1\).png');
 background-attachment: fixed;
 padding: 1rem;
 }
@@ -236,7 +237,7 @@ article div div div p{
 
 /*MENU*/
 header{
-    background-image: url('images/bc madera.jpg');
+    background-image: url('images/bc\ madera\ \(1\).png');
 background-attachment: fixed;
 padding: 7%;
 }
@@ -254,6 +255,9 @@ padding: 7%;
 }
 
 article p{
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -266,6 +270,31 @@ main{
 
 }
 
+.pb{
+  
+    display: inline-block;
+    padding: 0.5rem 0.3rem ;
+    border-radius: 8px 3px ;
+background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(231, 173, 14);
+font-size: 2rem;
+}
  
+figcaption{
+    text-align: end;
+    color: #fff;
+}
+
+
+
+h2{
+    text-align: center;
+    padding: 1.4rem;
+    color:#fff;
+    font-size: 1.9rem;
+}
+
+
+
 
 /*FIN MENU*/
