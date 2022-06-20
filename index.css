@@ -1,6 +1,7 @@
 /*icicio configuración general*/
 
 *{
+    color: #fff;
     margin: 0px;
     padding: 0px;
     border: 0cm;
@@ -305,6 +306,7 @@ main{
 }
 
 .pb{
+    text-align: center;
     margin-top: 10px;
   margin-left: 10px;
     display: inline-block;
@@ -334,7 +336,18 @@ figcaption{
     color: #fff;
 }
 
+article>div>p{
+    padding: 0.3rem;
+}
 
+
+
+
+
+/*FIN MENU*/
+
+
+/*INICIO ESTILOS EN 'H'*/
 h2{
     text-align: center;
     padding: 0.2rem;
@@ -352,16 +365,36 @@ h2{
 
 }
 
+h4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h6{
+    margin-bottom: 3px;
+    margin-left: 10px;
+text-align: center;
+   
+}
+/*FIN ESTILOS EN 'H'*/
+ 
+/*ID y CLASS PERSONALES*/
 #tmn{
-   margin-left:3rem;
-    width:40%
+    margin-left:3rem;
+     width:40%
+ 
+ }
+ 
+ @media (min-width:1024px){
+     #tmn{
+         width:0%
+     }
+ }
 
+ .non{
+    text-align:uns;
+ }
+
+.mm{
+    margin-top: 20px;
 }
-
-@media (min-width:1024px){
-    #tmn{
-        width:0%
-    }
-}
-
-/*FIN MENU*/
