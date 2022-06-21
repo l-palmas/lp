@@ -391,14 +391,31 @@ text-align: center;
      }
  }
 
- .non{
-    text-align:uns;
- }
-
+ 
 .mm{
     margin-top: 20px;
 }
 
 .mmo{
     font-size:1rem ;
+}
+
+.pl{
+    text-align: center;
+    margin-top: 10px;
+  margin-left: 10px;
+    display: inline-block;
+    padding: 0.5rem 0.4rem ;
+    border-radius: 8px 4px ;
+background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(231, 173, 14);
+font-size: 1rem;
+}
+
+.socials{
+    top: 92%;
+    left:89%;
+    position: fixed;
+    
+   
 }
