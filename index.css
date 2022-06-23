@@ -309,7 +309,7 @@ main{
     text-align: center;
     margin-top: 10px;
   margin-left: 10px;
-    display: inline-block;
+
     padding: 0.4rem 0.2rem ;
     border-radius: 8px 4px ;
 background-color: rgba(0, 0, 0, 0.4);
@@ -412,9 +412,23 @@ background-color: rgba(0, 0, 0, 0.4);
 font-size: 1rem;
 }
 
+
+
+.pd{
+    text-align: center;
+    margin-top: 40px;
+  margin-left: 10px;
+    display: inline-block;
+    padding: 0.5rem 0.4rem ;
+    border-radius: 8px 4px ;
+background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(231, 173, 14);
+font-size: 1rem;
+}
+
 .socials{
-    top: 85%;
-    left:89%;
+    top: 26%;
+    left:85%;
     position: fixed;
     
    
@@ -423,17 +437,24 @@ font-size: 1rem;
 
 
 /*boton*/
+
+.socials{
+    top: 26%;
+    left:85%;
+    position: fixed;
+}
+
 .boton{
-    height: 40px;
-    width: 40px;
-    background-color: rgb(64, 64, 255);
+    height: 50px;
+    width: 50px;
+    background-color: #008716;
     border-radius: 24px;
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .boton:hover{
-    height: 110px;
-    width: 40px;
+    height: 130px;
+    width: 50px;
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     border-radius: 10px;
 }
@@ -445,34 +466,44 @@ button{
     border:hidden;
 }
 
+button:hover{
+    justify-content: flex-start;
+}
+
 .src{
   
     padding: 5px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    
+    transition: all;
+transition-duration: 1s;
 }
 
 .boton:hover .src{
     height: 0px;
     width: 0px;
     opacity: 50%;
+   
 }
 
 .tmn{
     height: 0px;
     width: 0px;
     opacity: 0%;
+    transition: all;
+    transition-duration: 1s;
 }
 
 .boton:hover .tmn{
     padding: 5px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     opacity: 100%;
 }
 
 button ul li{
-    list-style: none;
+    list-style:none;
 }
 
 li a:hover img{
@@ -480,5 +511,15 @@ li a:hover img{
 }
 
 button ul{
-    margin-right: 2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+    
+}
+
+div button ul li a{
+  height: 0px;
+  width: 0px;
+    
 }
