@@ -432,7 +432,7 @@ font-size: 1rem;
 }
 
 .boton:hover{
-    height: 100px;
+    height: 110px;
     width: 40px;
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     border-radius: 10px;
@@ -446,7 +446,7 @@ button{
 }
 
 .src{
-    
+  
     padding: 5px;
     height: 20px;
     width: 20px;
@@ -461,12 +461,14 @@ button{
 .tmn{
     height: 0px;
     width: 0px;
+    opacity: 0%;
 }
 
 .boton:hover .tmn{
     padding: 5px;
     height: 20px;
     width: 20px;
+    opacity: 100%;
 }
 
 button ul li{
@@ -475,4 +477,8 @@ button ul li{
 
 li a:hover img{
     opacity: 60%;
+}
+
+button ul{
+    margin-right: 2px;
 }
