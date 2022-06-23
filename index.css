@@ -413,9 +413,66 @@ font-size: 1rem;
 }
 
 .socials{
-    top: 92%;
+    top: 85%;
     left:89%;
     position: fixed;
     
    
+}
+
+
+
+/*boton*/
+.boton{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(64, 64, 255);
+    border-radius: 24px;
+    transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.boton:hover{
+    height: 100px;
+    width: 40px;
+    transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-radius: 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:hidden;
+}
+
+.src{
+    
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.boton:hover .src{
+    height: 0px;
+    width: 0px;
+    opacity: 50%;
+}
+
+.tmn{
+    height: 0px;
+    width: 0px;
+}
+
+.boton:hover .tmn{
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+button ul li{
+    list-style: none;
+}
+
+li a:hover img{
+    opacity: 60%;
 }
