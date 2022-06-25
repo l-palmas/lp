@@ -477,7 +477,7 @@ button:hover{
     width: 25px;
     
     transition: all;
-transition-duration: 1s;
+transition-duration: .2s;
 }
 
 .boton:hover .src{
@@ -491,8 +491,9 @@ transition-duration: 1s;
     height: 0px;
     width: 0px;
     opacity: 0%;
-    transition: all;
-    transition-duration: 1s;
+    transition: all ease-out;
+    transition-duration: .2s;
+    
 }
 
 .boton:hover .tmn{

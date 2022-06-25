@@ -6,9 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuera de servicio</title>
     <style>
-        h5>a:hover{
-            color: rgb(90, 90, 255);
-        }
+        /* From uiverse.io by @G4b413l */
+.newtons-cradle {
+ --uib-size: 50px;
+ --uib-speed: 1.2s;
+ --uib-color: #474554;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: var(--uib-size);
+ height: var(--uib-size);
+}
+
+.newtons-cradle__dot {
+ position: relative;
+ display: flex;
+ align-items: center;
+ height: 100%;
+ width: 25%;
+ transform-origin: center top;
+}
+
+.newtons-cradle__dot::after {
+ content: '';
+ display: block;
+ width: 100%;
+ height: 25%;
+ border-radius: 50%;
+ background-color: white;
+}
+
+.newtons-cradle__dot:first-child {
+ animation: swing var(--uib-speed) linear infinite;
+}
+
+.newtons-cradle__dot:last-child {
+ animation: swing2 var(--uib-speed) linear infinite;
+}
+
+@keyframes swing {
+ 0% {
+  transform: rotate(0deg);
+  animation-timing-function: ease-out;
+ }
+
+ 25% {
+  transform: rotate(70deg);
+  animation-timing-function: ease-in;
+ }
+
+ 50% {
+  transform: rotate(0deg);
+  animation-timing-function: linear;
+ }
+}
+
+@keyframes swing2 {
+ 0% {
+  transform: rotate(0deg);
+  animation-timing-function: linear;
+ }
+
+ 50% {
+  transform: rotate(0deg);
+  animation-timing-function: ease-out;
+ }
+
+ 75% {
+  transform: rotate(-70deg);
+  animation-timing-function: ease-in;
+ }
+}
+
     </style>
 </head>
 <body style="background-color: #000;">
@@ -34,8 +104,14 @@
 
         EN PROCESO...
         <br>
-        <img style="margin-top:20px ;" src="https://images.gr-assets.com/hostedimages/1414861120ra/11699799.gif" width="50px" alt="">
+       
     </header>
+    <div style="left: 45%;" class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        </div>
     
 </body>
 </html>

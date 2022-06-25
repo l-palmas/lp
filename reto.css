@@ -1,40 +1,166 @@
 *{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.logo{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
+
+
+/* ESTILOS  DE LI DEL NAV ---- FIN */
+
+/* VOY A AÑADIR ESTILOS ÚNICAMENTE PARA EL LOGO
+DEL NAVBAR ---------- INICIO */
+
+.wandh{
+   
+    height: auto;
+    width: 40%;
 }
 
-section{
+@media (min-width:1024px) {
+.wandh{
+    height: auto;
+    width: 15%;
+}
+    
+}
+
+/* AÑADÍ ESTILOS ÚNICAMENTE PARA EL LOGO
+DEL NAVBAR ---------- INICIO */
+
+
+
+
+
+
+
+
+
+
+
+
+/* .spc{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; 
+    gap: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+
 }
 
+.linea{
+    background-color: darkgray;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    margin-left: -290%;
+    transition: 0.3s;
+}
 
-div{
-    margin: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
+.ocultar:hover .linea:nth-child(2){
+    background-color: rgba(255, 255, 255, 0);
+visibility: hidden;
+transition: 0.3s;
+}
 
+.ocultar:hover .linea:nth-child(1){
+    width: 30px;
+    transform: rotate(45deg)translateY(13px) translateX(-7px);
+    
+}
+
+.spc .linea:nth-child(1) ul{
+    visibility: hidden;
+}
+
+.ocultar:hover .linea:nth-child(3){
+    width: 30px;
+    transform: rotate(135deg) translateY(20px) translateX(-1px);
+    
+}
+
+.ocultar:hover .contenido{
+   opacity: 100%;
+    transition: 2s;
+}
+
+ul .contenido li{
+    background-color: #000;
+    border: #000 2px solid;
+    padding: 5px;
+}
+
+.contenido{
+    background-color: #000;
+    opacity: 0%;
+    visibility: visible;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    transform:translateY(100px) translateX(-100px);
+    width: 200px;
+    gap: 10px;
+    height: 100px;
+}
+
+.spc:hover .linea ul{
+
+visibility: visible;
+}
+.spc .linea ul.contenido li a{
+    color: rgb(255, 255, 255);
+}
+
+.spc .linea ul.contenido li a:hover{
+    color: rgb(32, 32, 32);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARA HACER UN BOTON DE LA FORMA 
+MÁS SENCILLA PODEMOS UTILILAR LOS 
+SIGUIENTES ESTILOS */
+
+.socials{
+    top: 26%;
+    left:85%;
+    position: fixed;
 }
 
 .boton{
-    height: 40px;
-    width: 40px;
-    background-color: rgb(64, 64, 255);
+    height: 50px;
+    width: 50px;
+    background-color: #008716;
     border-radius: 24px;
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .boton:hover{
-    height: 100px;
-    width: 40px;
+    height: 130px;
+    width: 50px;
     transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     border-radius: 10px;
 }
@@ -46,34 +172,308 @@ button{
     border:hidden;
 }
 
+button:hover{
+    justify-content: flex-start;
+}
+
 .src{
-    
+  
     padding: 5px;
     height: 25px;
     width: 25px;
+    
+    transition: all;
+transition-duration: 1s;
 }
 
 .boton:hover .src{
     height: 0px;
     width: 0px;
     opacity: 50%;
+   
 }
 
 .tmn{
     height: 0px;
     width: 0px;
+    opacity: 0%;
+    transition: all ease-out;
+    transition-duration: 0.5s;
+    
 }
 
 .boton:hover .tmn{
     padding: 5px;
     height: 25px;
     width: 25px;
+    opacity: 100%;
 }
 
+
+
 button ul li{
+    list-style:none;
+}
+
+ul li a.tmn:hover img{
+    opacity: 30%;
+}
+
+button ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+    
+}
+
+div button ul li a{
+  height: 0px;
+  width: 0px;
+    
+}
+
+/*Y LISTO BOTON HECHO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+descubrímos cómo hacer un nav bar totalmente funcional y muy fácil de realizar, no lo utilizaremos por el momento
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     list-style: none;
 }
 
-li a:hover img{
-    opacity: 60%;
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
+
+nav{
+    height: 50px;
+    background-color: #000;
+
+}
+
+nav ul{
+    float: right;
+    margin-right:35px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    border-radius: 3px;
+    color: beige;
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #000;
+    padding: 0px 15px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover , 
+nav ul li a.resaltado{
+    color: brown;
+
+}
+
+.resaltado:hover{
+    color: beige;
+}
+
+nav ul li:hover > ul{
+    height: 50px;
+visibility: visible;
+opacity: 1;
+transition: .3s;
+}
+
+
+nav ul ul{
+    position: absolute;
+top:50px;
+border-top:3px solid brown ;
+opacity: 0;
+visibility: hidden;
+
+}
+
+nav ul ul li{
+    width: 120px;
+    display: list-item;
+    position: relative;
+    border: 1px solid brown;
+    border-top: none;
+
+}
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul ul{
+    border-top: none ;
+
+}
+
+nav ul ul ul li{
+position: relative;
+top:-50px;
+left: 120px;
+}
+
+*/
