@@ -68,7 +68,7 @@ gap: 10px;
     transition: 0.3s;
     width: 0px;
     height: 0px;
-    
+    position:absolute;
 }
 
 .burger>li{
