@@ -211,7 +211,7 @@ height: 35vh;
 gap: 5px;
 height: 29vh;
 padding: 10px;
-    backdrop-filter: blur(2px)  brightness(50%);
+    backdrop-filter: blur(1px)  brightness(80%);
 }
 
 #title{
