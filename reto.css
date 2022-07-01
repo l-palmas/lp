@@ -146,16 +146,12 @@ gap: 10px;
 .bt:hover{
     color: rgb(155, 153, 191);
     border-bottom: 3px solid rgb(155, 153, 191);
+    padding: 3px;
+    border-radius: 1px;
     transition: 0.3s;
 }
 
 .resaltado:hover{
-    color: #000;
-    border-bottom: 0px solid rgba(155, 153, 191, 0);
-    transition: 0.5s;
-}
-
-.bt:hover li>a:nth-child(1){
     color: #000;
     border-bottom: 0px solid rgba(155, 153, 191, 0);
     transition: 0.5s;
@@ -187,6 +183,40 @@ gap: 10px;
 
    
 }
+
+/* NAV ESTILOS FIN */
+
+
+/* Header Estilos------Inicio */
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+
+.e1{
+position: absolute;
+transform: translateX(-133%) translateY(150%);
+width: 60%;
+height: auto;
+background-color: rgba(0, 0, 0, 0.299);
+backdrop-filter: blur(5px);
+
+}
+
+.grd{
+    width: 100px;
+    height: 10px;
+    background-image: linear-gradient (to right rgba(0, 0, 0, 0.626) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Header Estilos------Fin */
 
 
 
