@@ -282,18 +282,19 @@ padding: 10px;
    }
 }
 
-@media (min-width:700px) {
+@media (min-width:1024px) {
     
 
 
 header{
 
     height: 100%;
-   background-image: url(images/bc\ madera.jpg);
+    opacity: 100%;
+    background-image: url(images/bc\ madera.jpg);
     display: flex;
     align-items:center ;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 
 }
@@ -308,7 +309,7 @@ width: 100%;
 gap: 30px;
     height: 74vh;
     padding:10px ;
-    backdrop-filter: blur(2px)  brightness(50%);
+    backdrop-filter: blur(1px)  brightness(80%);
 }
 
 h1{
@@ -320,6 +321,7 @@ h1{
 
 .e1{
     padding: 30px;
+    width: 50%;
     animation: borde 2s;
     border-bottom: 5px solid rgb(255, 255, 255);
     
