@@ -6,6 +6,10 @@
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1186%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1187)'%3e%3c/rect%3e%3cpath d='M1440 0L865.16 0L1440 273.63z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M865.16 0L1440 273.63L1440 417.44L573.72 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M573.72 0L1440 417.44L1440 467.58L341.28000000000003 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M341.28 0L1440 467.58L1440 525.24L268.37 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L243.18 560L0 372.78z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 372.78L243.18 560L574.4300000000001 560L0 337.89z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 337.89L574.4300000000001 560L926.6300000000001 560L0 291.38z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 291.38L926.6300000000001 560L1210.69 560L0 281.68z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1186'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1187'%3e%3cstop stop-color='rgba(6%2c 27%2c 13%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 158%2c 22%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
  
 /* ESTILOS  DE LI DEL NAV ---- FIN */
 
@@ -364,9 +368,6 @@ body>section>header>div>img{
 
 }
 
-main{
-    grid-column: span 12;
-}
 
 /* Header Estilos------Fin */
 
@@ -378,6 +379,7 @@ main{
 
 article{
     padding: .5rem;
+    margin: 0.5rem;
     background-color: darkgray;
 }
 
@@ -389,7 +391,10 @@ hgroup{
 
 @media (min-width:1024px){
     main{
-        grid-column: span 8;
+        grid-column: span 12;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
     
     }
     
@@ -401,6 +406,93 @@ hgroup{
 }
 
 /* ESTILOS DE MAIN----------FIN*/
+
+/* ESTILOS DE PRIMER ARTICLE-------INICIO */
+.fotos{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.fotos>img{
+    scroll-snap-align: start;
+}
+
+.fotos img{
+    border-radius: 20px;
+    width: 320px;
+    object-fit: contain;
+}
+
+input{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    width: 3px;
+    height: 3px;
+    transform: translateY(45vh) translateX(85vw);
+    position: absolute;
+}
+
+input>img{
+    position: absolute;
+    box-shadow: #fff;
+}
+
+@media (min-width:1024px){
+
+    input{
+        visibility: visible;
+    }
+
+    
+
+.fotos img{
+    border-radius: 20px;
+    width: 60vw;
+    object-fit: contain;
+}
+}
+.fotos::-webkit-scrollbar{
+    display: none;
+}
+
+/* ESTILOS DE PRIMER ARTICLE-------FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* PARA HACER UN BOTON DE LA FORMA 
