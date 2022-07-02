@@ -1,13 +1,12 @@
 *{
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
+ 
 
 
 
@@ -114,13 +113,21 @@ gap: 10px;
 
 }
 
+.ct{
+    visibility: hidden;
+}
+
+#o{
+    width: 30%;
+}
 
 .compu{
-    visibility: hidden;
     background-color: rgb(244, 244, 244);
     border-bottom: 1px solid silver;
     padding: 5px;
     color: #000;
+    width: 100%;
+    position: fixed;
 }
 
 .compu>ul{
@@ -160,6 +167,16 @@ gap: 10px;
 
 
 @media (min-width:1024px){
+
+#o{
+    width: 13%;
+}
+
+.ct{
+    visibility: visible;
+    font-size: 1.3rem;
+}
+
     .compu{
         visibility: visible;
 
@@ -187,169 +204,151 @@ gap: 10px;
 /* NAV ESTILOS FIN */
 
 
+
+
+
+
+
+
+
+
+
 /* Header Estilos------Inicio */
 
-header{
+section{
+display: grid;
+grid-template-columns: repeat(12 , 1fr);
+}
 
-height: 35vh;
-   background-image: url(images/bc\ madera.jpg);
+header{
+    grid-column: span 12 ;
     display: flex;
-    align-items:center ;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
+    align-items: center;
+    background-image: url(images/bc\ madera.jpg);
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .container{
-    position: fixed;
     display: flex;
-    align-items:center ;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
-gap: 2px;
-height: 29vh;
-padding: 10px;
-    backdrop-filter: blur(1px)  brightness(80%);
+    background-color: rgba(0, 0, 0, 0.316);
+    padding: 40px;
 }
 
 #title{
     text-align: center;
     padding: 10px;
+    font-size: .4rem;
+    width:35% ;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+body>section>header>div>img{
+    padding: 20px;
     width: 50%;
-    font-size: 1.5rem;
-    border-bottom: 4px solid rgb(255, 255, 255);
-    animation: brd 2s;
+    border-bottom: 3px solid #fff;
 }
 
-@keyframes brd{
-    0%{
-        width: 0%;
-        opacity: 0%;
-        border-bottom: 4px solid rgba(255, 255, 255, 0);
-
-    }
-
-20%{
-    width: 80%;
-}
-
-    50%{
-        width: 70%;
-        opacity: 100%;
-   
-    }
-
-
-   100%{
-    border-bottom: 4px solid rgb(255, 255, 255);
-   }
-}
-
-
-.e1{
-    padding: 5px;
-    width: 70%;
-    animation: borde 2s;
-    border-bottom: 4px solid rgb(255, 255, 255);
+@media (min-width:1024px) {
     
-}
-
-
-
-@keyframes borde{
-    0%{
-        width: 0%;
-        opacity: 0%;
-        border-bottom: 4px solid rgba(255, 255, 255, 0);
-
-    }
-
-20%{
-    width: 80%;
-}
-
-    50%{
-        width: 70%;
-        opacity: 100%;
-   
-    }
-
-
-   100%{
-    border-bottom: 4px solid rgb(255, 255, 255);
-   }
-}
-
-@media screen and (min-width:1024px) {
-    
-
 
 header{
-
-    height: 100%;
-    opacity: 100%;
-    background-image: url(images/bc\ madera.jpg);
+    grid-column: span 12 ;
     display: flex;
-    align-items:center ;
-    align-content: center;
-    justify-content: flex-start;
-    flex-direction: column;
-
+    align-items: center;
+    background-image: url(images/bc\ madera.jpg);
+    width:100%;
+    height: auto;
 }
 
 .container{
     display: flex;
-    align-items:center ;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
-width: 100%;
-gap: 30px;
-    height: 74vh;
-    padding:10px ;
-    backdrop-filter: blur(1px)  brightness(80%);
+    background-color: rgba(0, 0, 0, 0.316);
+    padding: 100px;
+    margin-top: 50px;
+    width: 100%;
+
 }
 
-h1{
+#title{
     text-align: center;
     padding: 10px;
-    width: 50%;
+    font-size: 2.3rem;
+    width:35% ;
     border-bottom: 5px solid rgb(255, 255, 255);
+    animation: brd 2s;
+    animation-delay: 1s;
 }
 
-.e1{
-    padding: 30px;
-    width: 50%;
-    animation: borde 2s;
-    border-bottom: 5px solid rgb(255, 255, 255);
-    
-}
-
-
-
-
-}
-
-@keyframes borde{
+@keyframes brd {
     0%{
-        width: 0%;
-        opacity: 0%;
+        width:0%;
         border-bottom: 5px solid rgba(255, 255, 255, 0);
-
     }
-
-    50%{
+    20%{
         width: 50%;
-        opacity: 100%;
-   
+    }
+    40%{
+        width: 40%;
+    }
+    
+    80%{
+        width: 70%;
     }
 
-   100%{
-    border-bottom: 5px solid rgb(255, 255, 255);
-   }
+    100%{
+        border-bottom: 5px solid #fff;
+    }
 }
+
+body>section>header>div>img{
+    width: 70%;
+    padding: 20px;
+    border-bottom: 5px solid #fff;
+    animation: borde 2s;
+    animation-delay: 1s;
+}
+
+@keyframes borde {
+    0%{
+        width:0%;
+        border-bottom: 5px solid rgba(255, 255, 255, 0);
+    }
+    20%{
+        width: 50%;
+    }
+    40%{
+        width: 40%;
+    }
+    
+    80%{
+        width: 70%;
+    }
+
+    100%{
+        border-bottom: 5px solid #fff;
+    }
+}
+
+
+}
+
+main{
+    grid-column: span 12;
+}
+
+
+
+
 /* Header Estilos------Fin */
 
 
@@ -357,6 +356,32 @@ h1{
 
 
 
+
+
+
+
+/* ESTILOS DE MAIN----------INICIO*/
+
+main{
+    width:100%;
+    display: grid;
+
+}
+
+section{
+    padding: 0 5rem 0 5rem;
+
+}
+
+
+
+h2{
+    color: #000;
+    padding: auto;
+}
+
+
+/* ESTILOS DE MAIN----------FIN*/
 
 
 /* PARA HACER UN BOTON DE LA FORMA 
