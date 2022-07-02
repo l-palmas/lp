@@ -7,9 +7,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
  
-
-
-
 /* ESTILOS  DE LI DEL NAV ---- FIN */
 
 .cel{
@@ -44,11 +41,10 @@ background-color: rgba(255, 255, 255, 0);
     color: rgb(52, 48, 110);
 }
 
-
 .spc:hover .burger{
     visibility: visible;
     opacity: 100%;
-    transform: translateX(-50px) translateY(30px);
+    transform: translateX(-60%) translateY(21%);
     background-color: rgb(119, 137, 152);
     width: 100px;
     height: 70px;
@@ -76,15 +72,10 @@ gap: 10px;
 
 }
 
-
-
-
 .imgs{
     width: 35%;
     margin-right: 0%;
 }
-
-
 
 .linea{
     visibility: visible;
@@ -96,7 +87,6 @@ gap: 10px;
     margin-left: -290%;
     transition: 0.3s;
 }
-
 
 .spc:hover .linea:nth-child(2){
     visibility: hidden;
@@ -148,8 +138,6 @@ gap: 10px;
     border-bottom: 0px solid rgba(155, 153, 191, 0);
 }
 
-
-
 .bt:hover{
     color: rgb(155, 153, 191);
     border-bottom: 3px solid rgb(155, 153, 191);
@@ -163,8 +151,6 @@ gap: 10px;
     border-bottom: 0px solid rgba(155, 153, 191, 0);
     transition: 0.5s;
 }
-
-
 
 @media (min-width:1024px){
 
@@ -203,16 +189,6 @@ gap: 10px;
 
 /* NAV ESTILOS FIN */
 
-
-
-
-
-
-
-
-
-
-
 /* Header Estilos------Inicio */
 
 section{
@@ -228,6 +204,8 @@ header{
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
+    width: 100%;
+    height: 40vh;
 }
 
 .container{
@@ -236,22 +214,68 @@ header{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.316);
-    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.167);
+    padding: 2px;
+    width: 100%;
+    height: 100%;
 }
 
 #title{
     text-align: center;
     padding: 10px;
-    font-size: .4rem;
-    width:35% ;
+    font-size: 1.4rem;
+    width:70% ;
     border-bottom: 3px solid rgb(255, 255, 255);
+    animation:brd 2s;
+}
+
+@keyframes brd {
+    0%{
+        width:80%;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+    }
+    20%{
+        width: 80%;
+    }
+    40%{
+        width: 90%;
+    }
+    
+    80%{
+        width: 70%;
+    }
+
+    100%{
+        border-bottom: 3px solid #fff;
+    }
 }
 
 body>section>header>div>img{
     padding: 20px;
-    width: 50%;
+    width: 80%;
     border-bottom: 3px solid #fff;
+    animation:borde 2s;
+}
+
+@keyframes borde {
+    0%{
+        width:0%;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+    }
+    20%{
+        width: 70%;
+    }
+    40%{
+        width: 60%;
+    }
+    
+    80%{
+        width: 80%;
+    }
+
+    100%{
+        border-bottom: 3px solid #fff;
+    }
 }
 
 @media (min-width:1024px) {
@@ -263,7 +287,7 @@ header{
     align-items: center;
     background-image: url(images/bc\ madera.jpg);
     width:100%;
-    height: auto;
+    height: 80vh;
 }
 
 .container{
@@ -273,10 +297,7 @@ header{
     align-content: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.316);
-    padding: 100px;
-    margin-top: 50px;
-    width: 100%;
-
+    padding: 2px;
 }
 
 #title{
@@ -346,40 +367,37 @@ main{
     grid-column: span 12;
 }
 
-
-
-
 /* Header Estilos------Fin */
-
-
-
-
-
-
-
-
-
 
 /* ESTILOS DE MAIN----------INICIO*/
 
 main{
-    width:100%;
-    display: grid;
-
+    grid-column: span 12;
 }
 
-section{
-    padding: 0 5rem 0 5rem;
-
+article{
+    padding: .5rem;
+    background-color: darkgray;
 }
 
-
-
-h2{
-    color: #000;
-    padding: auto;
+hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+@media (min-width:1024px){
+    main{
+        grid-column: span 8;
+    
+    }
+    
+    article{
+        padding: 1rem;
+        background-color: darkgray;
+    }
+
+}
 
 /* ESTILOS DE MAIN----------FIN*/
 
