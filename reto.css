@@ -105,6 +105,7 @@ gap: 10px;
 
 .ct{
     visibility: hidden;
+    width: 0px;
 }
 
 #o{
