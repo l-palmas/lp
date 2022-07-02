@@ -208,7 +208,7 @@ height: 35vh;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-gap: 5px;
+gap: 2px;
 height: 29vh;
 padding: 10px;
     backdrop-filter: blur(1px)  brightness(80%);
@@ -249,7 +249,7 @@ padding: 10px;
 
 
 .e1{
-    padding: 30px;
+    padding: 5px;
     width: 70%;
     animation: borde 2s;
     border-bottom: 4px solid rgb(255, 255, 255);
@@ -282,7 +282,7 @@ padding: 10px;
    }
 }
 
-@media (min-width:1024px) {
+@media screen and (min-width:1024px) {
     
 
 
@@ -328,6 +328,10 @@ h1{
 }
 
 
+
+
+}
+
 @keyframes borde{
     0%{
         width: 0%;
@@ -345,7 +349,6 @@ h1{
    100%{
     border-bottom: 5px solid rgb(255, 255, 255);
    }
-}
 }
 /* Header Estilos------Fin */
 
